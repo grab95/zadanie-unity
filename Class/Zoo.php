@@ -54,8 +54,9 @@ class Zoo
     public function takeCareOfAnimals(): void
     {
         foreach ($this->animals as $animal) {
-            if ($animal instanceof TakeCareInterface)
-            $animal->takeCare();
+            if ($animal instanceof TakeCareInterface) {
+                $animal->takeCare();
+            }
         }
     }
 }
