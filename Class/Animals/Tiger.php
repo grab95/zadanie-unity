@@ -18,6 +18,6 @@ class Tiger extends Animal
 
     public function takeCare(): void
     {
-        $this->groom($this->name);
+        $this->groom($this);
     }
 }

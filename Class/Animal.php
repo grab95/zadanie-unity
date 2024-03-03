@@ -20,7 +20,7 @@ abstract class Animal
 
     public function __toString(): string
     {
-        return $this->spice->value . '-' . $this->name;
+        return $this->spice->value . ' - ' . $this->name;
     }
 
     public function feed(Food $food): void
