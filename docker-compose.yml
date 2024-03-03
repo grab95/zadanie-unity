@@ -1,0 +1,22 @@
+version: '3.7'
+
+services:
+  postgres:
+    container_name: postgres_container
+    image: postgres:14
+    environment:
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: example
+      POSTGRES_DB: db
+      PGDATA: /data/postgres
+    volumes:
+      - ./sql/pg-data:/data/postgres
+      - ./sql/scripts:/scripts
+    ports:
+      - 127.0.0.1:5555:5432
+    networks:
+      - postgres
+
+networks:
+  postgres:
+    driver: bridge
