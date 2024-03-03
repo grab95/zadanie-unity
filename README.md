@@ -12,7 +12,7 @@
 sh run.sh
 ```
 
-2. Czas na uruchomienie kontenera to 60s jesli chcesz zmień w run.sh
+2. Czas na uruchomienie kontenera to 60s, jesli chcesz zmień w run.sh
 
 ## Baza danych
 
