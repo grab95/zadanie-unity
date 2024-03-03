@@ -5,9 +5,10 @@ namespace Animals;
 use Class\Animal;
 use Enum\Diet;
 use Enum\Spice;
+use Interface\TakeCareInterface;
 use Trait\FurryCare;
 
-class SnowLeopard extends Animal
+class SnowLeopard extends Animal implements TakeCareInterface
 {
     use FurryCare;
 

@@ -3,6 +3,7 @@
 namespace Class;
 
 use Enum\Diet;
+use Interface\TakeCareInterface;
 
 class Zoo
 {
@@ -52,6 +53,7 @@ class Zoo
     public function takeCareOfAnimals(): void
     {
         foreach ($this->animals as $animal) {
+            if ($animal instanceof TakeCareInterface)
             $animal->takeCare();
         }
     }

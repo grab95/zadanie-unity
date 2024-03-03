@@ -31,6 +31,4 @@ abstract class Animal
                 : ' cannot eat '
             ) . $food->getName() . ' because is ' . $this->diet->value  . ".\n";
     }
-    public function takeCare(): void
-    {}
 }

@@ -4,7 +4,8 @@
       "Class\\": "Class",
       "Enum\\": "Enum",
       "Animals\\": "Class/Animals",
-      "Trait\\": "Trait"
+      "Trait\\": "Trait",
+      "Interface\\": "Interface"
     }
   }
 }
