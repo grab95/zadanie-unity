@@ -2,6 +2,7 @@
 
 namespace Class;
 
+use Animals\Animal;
 use Enum\Diet;
 use Interface\TakeCareInterface;
 

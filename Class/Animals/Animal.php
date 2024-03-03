@@ -1,7 +1,8 @@
 <?php
 
-namespace Class;
+namespace Animals;
 
+use Class\Food;
 use Enum\Diet;
 use Enum\Spice;
 

@@ -3,7 +3,6 @@
 namespace Animals;
 
 
-use Class\Animal;
 use Enum\Diet;
 use Enum\Spice;
 
