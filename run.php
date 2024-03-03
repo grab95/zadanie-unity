@@ -22,4 +22,5 @@ $zoo = new Zoo();
 $zoo->addAnimals($animals);
 
 $zoo->feedAnimals();
+echo "\n";
 $zoo->takeCareOfAnimals();

@@ -37,6 +37,16 @@ class Zoo
                 Diet::Omnivore => $animal->feed($meetWithRice),
             };
         }
+
+        echo "\nTest with different food \n\n";
+
+        foreach ($this->animals as $animal) {
+            match ($animal->getDiet()){
+                Diet::Herbivore => $animal->feed($meetWithRice),
+                Diet::Carnivore => $animal->feed($rice),
+                Diet::Omnivore => $animal->feed($meet),
+            };
+        }
     }
 
     public function takeCareOfAnimals(): void

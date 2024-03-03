@@ -25,7 +25,11 @@ abstract class Animal
 
     public function feed(Food $food): void
     {
-        echo $this . ($this->diet === $food->getDiet() ? ' eats ' : 'cannot eat') . $food->getName() . ".\n";
+        echo $this . (
+            $this->diet === $food->getDiet() || $this->diet === Diet::Omnivore
+                ? ' eats '
+                : ' cannot eat '
+            ) . $food->getName() . ' because is ' . $this->diet->value  . ".\n";
     }
     public function takeCare(): void
     {}
